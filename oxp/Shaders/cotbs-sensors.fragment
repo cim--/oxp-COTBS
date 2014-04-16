@@ -1,0 +1,20 @@
+uniform float uFloat1; // seed
+uniform float uFloat2; // intensity
+
+varying vec2 vTexCoord;
+
+void main() {
+	float x = (float)round(vTexCoord.x * 1000.0);
+	float y = (float)round(vTexCoord.y * 1000.0);
+	
+	float val = sin(x+uFloat1)*cos(y+uFloat1);
+	val = val*val*val;
+	if (val > uFloat2 && val > -uFloat2) {
+		gl_FragColor = vec4(1.0,1.0,1.0,1.0);
+	} else if (val < -uFloat2 && val < uFloat2) {
+		gl_FragColor = vec4(0.0,0.0,0.0,1.0);
+	} else {
+		discard;
+	}
+
+}

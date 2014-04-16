@@ -1,0 +1,16 @@
+{
+		"cotbs-taunt" = ("The curse of the black sunspot will destroy you, Commander","Your [commander_shipname] is a death trap now, Commander","Let this be my revenge on you, who would steal my loot.","Commander [commander_name]. I hope you enjoy %J072.","Consider this a parting gift, Commander.","Death to all bounty hunters!","I will be avenged!","I shall see you in hell shortly, Commander.","Did you not think I would have prepared for my death, Commander?","Perhaps you will now reconsider your bounty hunting career.","Commander, I was aware of the bounty on my head. I am determined you shall not profit from it.","Hello again Commander. Commodore Bredl here. You seem to still be alive, but not for long.");
+
+		"cotbs-sneaky-taunt" = "You didn't really think you could be free of me that easily, did you? Only your death will release you.";
+
+		"cotbs-oops-taunt" = "Transmission terminated? Well, the curse can still destroy you, Commander!";
+
+		"cotbs-comm-alert2" = "Bredl to Sunspot Base! Send reinforcements: we've got an iron ass on our backs!";
+		"cotbs-comm-alert3" = "Bredl to Sunspot Base! Where are those reinforcements?";
+		"cotbs-comm-alert4" = "Sunspot Base! Do you copy? My escorts are down!";
+
+		"cotbs-story-begin" = "Several system governments and trader unions delivered an unusual joint statement to the Galcop Council today, demanding that action be taken against increasing piracy in the Teususdi Outland. The pirates are believed to be operating out of Enanen, and are considerably better equipped and organised than the usual rabble. Accusations of favouritism towards Rimaexde and Esgeer for the deployment of the region's limited Viper fleet have been denied by the Council.";
+		
+		"cotbs-story-destroyed" = "Piracy in the Teususdi Outland is declining after the destruction of the pirate flagship Adversarial and several of its escorts by an anonymous pilot. Commodore Bredl is believed to have gone down with the ship, and the remainder of the pirate fleet appears to be lying low for now.";
+
+}

@@ -1,0 +1,8 @@
+{
+	"GLOBAL" = {
+		"ENTER" = ("sendScriptMessage: _setTarget","setDesiredRangeTo: 200",performIntercept);
+		"TARGET_LOST" = ("becomeExplosion");
+		"DESIRED_RANGE_ACHIEVED" = ("becomeExplosion");
+	};
+
+}

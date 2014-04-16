@@ -1,0 +1,11 @@
+varying vec3            v_normal;
+varying vec2            vTexCoord;
+
+void main()
+{
+    v_normal = normalize(gl_NormalMatrix * gl_Normal);
+    
+    gl_TexCoord[0] = gl_TextureMatrix[0] * gl_MultiTexCoord0;
+		vTexCoord = gl_TexCoord[0].st;
+    gl_Position = ftransform();
+}

@@ -1,0 +1,205 @@
+{
+		"cotbs-leader" = { 
+				"like_ship" = "python";
+				"max_flight_speed" = 270;
+				"missile_role" = "EQ_HARDENED_MISSILE";
+				"forward_weapon_type" = "WEAPON_MILITARY_LASER";
+				"aft_weapon_type" = "WEAPON_MILITARY_LASER";
+				"starboard_weapon_type" = "WEAPON_BEAM_LASER";
+				"port_weapon_type" = "WEAPON_BEAM_LASER";
+				"max_energy" = 700;
+				"has_ecm" = 1;
+				"has_escape_pod" = 0;
+				"has_scoop" = 1;
+				"has_shield_booster" = 1;
+				"likely_cargo" = 0;
+				"max_cargo" = 0; /* handled by script */
+				"roles" = "cotbs_leader";
+				"ai_type" = "pirateAI.plist";
+				"energy_recharge_rate" = 4.5;
+				"accuracy" = 9;
+				"script" = "cotbs-leader.js";
+				"escorts" = 4;
+				"escort_role" = "cotbs_escort";
+				"script_info" =         {
+						"randomshipnames" = no;
+						"cotbsname" = "Adversarial";
+				};
+		};
+
+		"cotbs-escort1" = {
+				"like_ship" = "asp";
+				"forward_weapon_type" = "WEAPON_MILITARY_LASER";
+				"aft_weapon_type" = "WEAPON_BEAM_LASER";
+				"has_ecm" = 1;
+				"has_fuel_injection" = 1;
+				"has_shield_booster" = 1;
+				"has_scoop" = 0;
+				"accuracy" = 8;
+				"roles" = "cotbs_escort cotbs_escort1";
+				"script" = "cotbs-escort.js";
+				"condition_script" = "cotbs-conditions.js";
+				"script_info" =         {
+						"randomshipnames" = no;
+						"cotbsname" = "War Hound";
+				};
+		};
+
+		"cotbs-escort2" = {
+				"like_ship" = "asp";
+				"forward_weapon_type" = "WEAPON_MILITARY_LASER";
+				"aft_weapon_type" = "WEAPON_BEAM_LASER";
+				"has_ecm" = 1;
+				"has_escape_pod" = 0;
+				"has_fuel_injection" = 1;
+				"has_shield_booster" = 1;
+				"has_scoop" = 0;
+				"accuracy" = 8;
+				"roles" = "cotbs_escort cotbs_escort2";
+				"script" = "cotbs-escort.js";
+				"condition_script" = "cotbs-conditions.js";
+				"script_info" =         {
+						"randomshipnames" = no;
+						"cotbsname" = "World's Pain";
+				};
+		};
+
+		"cotbs-escort3" = {
+				"like_ship" = "cobra3-trader";
+				"forward_weapon_type" = "WEAPON_MILITARY_LASER";
+				"aft_weapon_type" = "WEAPON_BEAM_LASER";
+				"port_weapon_type" = "WEAPON_BEAM_LASER";
+				"starboard_weapon_type" = "WEAPON_BEAM_LASER";
+				"max_energy" = 256;
+				"has_ecm" = 1;
+				"has_escape_pod" = 0;
+				"has_scoop" = 0;
+				"has_shield_booster" = 1;
+				"max_flight_speed" = 350;
+				"missiles" = 4;
+				"accuracy" = 8.6;
+				"missile_role" = "EQ_HARDENED_MISSILE";
+				"energy_recharge_rate" = 6.5; // EEU
+				"roles" = "cotbs_escort cotbs_escort3";
+				"script" = "cotbs-escort.js";
+				"condition_script" = "cotbs-conditions.js";
+				"script_info" =         {
+						"randomshipnames" = no;
+						"cotbsname" = "Burning Scourge of Enanen";
+				};
+		};
+
+		"cotbs-escort4" = {
+				"like_ship" = "sidewinder";
+				"forward_weapon_type" = "WEAPON_BEAM_LASER";
+				"accuracy" = 10;
+				"has_ecm" = 1;
+				"has_scoop" = 0;
+				"roles" = "cotbs_escort cotbs_escort4";
+				"script" = "cotbs-escort.js";
+				"condition_script" = "cotbs-conditions.js";
+				"script_info" =         {
+						"randomshipnames" = no;
+						"cotbsname" = "Banshee";
+				};
+				
+		};
+
+		"cotbs-loot" = {
+				"like_ship" = "barrel";
+				"cargo_type" = "CARGO_CARRIED";
+				"cargo_carried" = "Gold";
+				"script" = "cotbs-loot.js";
+				"roles" = "cotbs_loot";
+		};
+
+		"cotbs-misjumper" = {
+				"like_ship" = "alloy";
+				"hyperspace_motor" = "yes";
+				"roles" = "cotbs_misjumper";
+				"fuel" = "70";
+		};				
+
+		"cotbs-ghost-base" = {
+				"ai_type" = "cotbsGhostAI.plist";
+				"counts_as_kill" = 0;
+				"max_energy" = 1;
+				"model" = "cotbs-ghost.dat";
+				"max_flight_roll" = 2;
+				"max_flight_pitch" = 2;
+				"max_flight_speed" = 400;
+				"roles" = "cotbs-ghost";
+				"scanner_display_color1" = "0 0 0 0";
+				"scanner_display_color2" = "0 0 0 0";
+				"script" = "cotbs-ghost.js";
+				"name" = "Vengeance";
+				"scan_class" = "CLASS_ROCK";
+		};
+
+		"cotbs-rock" = {
+				"ai_type" = "cotbsRockAI.plist";
+		  	"model" = "cotbs-rock.dat";
+				"smooth" = "yes";
+				"scan_class" = "CLASS_ROCK";
+				"name" = "Asteroid";
+				"max_energy" = "20000";
+				"energy_recharge_rate" = 0;
+				"missiles" = 0;
+				"thrust" = 10000;
+				"max_flight_speed" = 0;
+				"max_flight_pitch" = 0;
+				"max_flight_roll" = 0;
+				"max_flight_yaw" = 0;
+				"subentities" = (
+						{"type"="ball_turret"; "subentity_key"="cotbs-turret"; "position" = "-120 -403 620"; "orientation" = "1 0 0 0"; },
+						{"type"="ball_turret"; "subentity_key"="cotbs-turret"; "position" = "-120 -203 620"; "orientation" = "1 0 0 0"; },
+						{"type"="ball_turret"; "subentity_key"="cotbs-turret"; "position" = "496 -170 620"; "orientation" = "1 0 0 0"; },
+						{"type"="ball_turret"; "subentity_key"="cotbs-turret"; "position" = "496 -30 620"; "orientation" = "1 0 0 0"; },
+				);
+				"roles" = "cotbs-rock";
+				"script" = "cotbs-rock.js";
+				"frangible" = "yes";
+		};
+
+		"cotbs-turret" = {
+				"like_ship" = "ballturret";
+				"max_energy" = "250";
+				"energy_recharge_rate" = "3";
+				"model" = "cotbs-turret.dat";
+		};
+
+		"cotbs-transmitter" = {
+				"ai_type" = "nullAI.plist";
+				"model" = "cotbs-transmitter.dat";
+				"smooth" = "yes";
+				"subentities" = (
+						{"type"="flasher"; "position"="0 0 11.5"; size="4"; color="cyanColor"; bright_fraction="0.2"; frequency="0.2"; }
+				);				
+				"scan_class" = "CLASS_CARGO";
+				"cargo_type" = "CARGO_SCRIPTED_ITEM";
+				"script" = "cotbs-transmitter.js";
+				"roles" = "cotbs-transmitter";
+				"name" = "Transmitter";
+				"max_energy" = "25";
+				"energy_recharge_rate" = "0";
+				"scanner_display_color1" = "cyanColor";
+				"scanner_display_color2" = "whiteColor";
+		};
+
+		"cotbs-guard" = {
+				"like_ship" = "asp";
+				"ai_type" = "pirateAI.plist";
+				"forward_weapon_type" = "WEAPON_MILITARY_LASER";
+				"aft_weapon_type" = "WEAPON_BEAM_LASER";
+				"bounty" = 20;
+				"has_ecm" = 1;
+				"has_fuel_injection" = 1;
+				"has_shield_booster" = 1;
+				"has_scoop" = 0;
+				"accuracy" = 8;
+				"roles" = "cotbs-guard";
+				"script" = "cotbs-guard.js";
+		};
+
+}
+

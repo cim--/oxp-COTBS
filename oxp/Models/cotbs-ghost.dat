@@ -1,0 +1,26 @@
+// output from Obj2DatTex.py Wavefront text file conversion script
+// (c) 2005 By Giles Williams
+// 
+// original file: "cotbs-ghost.obj"
+// 
+// model size: 2.000 x 0.000 x 1.732
+// 
+// textures used: ['cotbs-sunspot.png']
+// 
+NVERTS 3
+NFACES 2
+
+VERTEX
+-0.00000, -0.00000, 1.15470
+1.00000, -0.00000, -0.57735
+-1.00000, -0.00000, -0.57735
+
+FACES
+1,0,0,	-0.00000,1.00000,0.00000,	3,	0,2,1
+1,0,0,	-0.00000,-1.00000,0.00000,	3,	1,2,0
+
+TEXTURES
+cotbs-sunspot.png	1.0 1.0	0.28868 0.50000	0.57735 0.00000	0.00000 0.00000
+cotbs-sunspot.png	1.0 1.0	0.57735 0.50000	0.00000 0.50000	0.28868 1.00000
+
+END

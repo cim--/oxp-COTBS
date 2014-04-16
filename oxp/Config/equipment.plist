@@ -1,0 +1,11 @@
+(
+		(
+				8, 10000, "Restore to factory settings", "EQ_COTBS_RESTORE",
+				"Restore your main flight systems to factory settings, to recover from a virus infection.",
+				{
+						"available_to_all" = "yes";
+						"condition_script" = "cotbs-conditions.js";
+				}
+		)
+
+)

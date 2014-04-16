@@ -1,0 +1,72 @@
+{
+		"cotbs-ghost-1" = {
+		   "model" = "cobra3_redux.dat";
+				"scanner_display_color1" = "1 0.25 0 1";
+				"scanner_display_color2" = "1 0.25 0 1";
+		};
+		"cotbs-ghost-2" = {
+				"model" = "sidewinder_redux.dat";
+				"scanner_display_color1" = "1 0.25 0 1";
+				"scanner_display_color2" = "1 0.25 0 1";
+		};
+		"cotbs-ghost-3" = {
+		    "model" = "mamba_redux.dat";
+				"scanner_display_color1" = "1 0.25 0 1";
+				"scanner_display_color2" = "1 0.25 0 1";
+		};
+		"cotbs-ghost-4" = {
+		    "model" = "python_redux.dat";
+				"scanner_display_color1" = "1 0.25 0 1";
+				"scanner_display_color2" = "1 0.25 0 1";
+		};
+		"cotbs-ghost-5" = {
+		    "model" = "missile.dat";
+				"scanner_display_color1" = "cyanColor";
+				"scanner_display_color2" = "cyanColor";
+		};
+		"cotbs-ghost-6" = {
+				"model" = "qbomb.dat";
+				"scanner_display_color1" = "1 0.25 0 1";
+				"scanner_display_color2" = "yellowColor";
+		};
+
+		"cotbs-sunspot" = {
+		    "model" = "cotbs-sunspot2.dat";
+				"materials" = {
+						"cotbs-sunspot.png" = {
+								"emission_map" = "cotbs-sunspot.png";
+								"vertex_shader" = "cotbs-sunspot.vertex";
+								"fragment_shader" = "cotbs-sunspot.fragment";
+								"uniforms" = { "time" = "timeElapsedSinceSpawn"; };
+						};
+				};
+				"smooth" = 1;
+		};
+		"cotbs-sunspot2" = {
+		    "model" = "cotbs-sunspot2.dat";
+				"materials" = {
+						"cotbs-sunspot.png" = {
+								"emission_map" = "cotbs-skull.png";
+								"vertex_shader" = "cotbs-sunspot.vertex";
+								"fragment_shader" = "cotbs-sunspot2.fragment";
+								"textures" = ("cotbs-skull.png");
+						};
+				};
+				"smooth" = 1;
+		};
+
+		"cotbs-error" = {
+				"model" = "alloy.dat";
+				"materials" = {
+						"metal.png" = {
+								"vertex_shader" = "cotbs-sensors.vertex";
+								"fragment_shader" = "cotbs-sensors.fragment";
+								"uniforms" = {
+										"uFloat1" = "shaderFloat1";
+										"uFloat2" = "shaderFloat2";
+								};
+						};
+				};
+				"script" = "cotbs-error.js";
+		};
+}

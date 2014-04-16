@@ -1,0 +1,11 @@
+{
+	"identifier" = "oolite.oxp.cim.cotbs";
+	"required_oolite_version" = "1.79";
+	"title" = "Curse of the Black Sunspot";
+	"version" = "1.0.2";
+	"category" = "Missions";
+	"description" = "An informal mission for experienced players set in Chart 3";
+	"author" = "cim";
+	"information_url" = "http://wiki.alioth.net/index.php/Curse_of_the_Black_Sunspot";
+	"license" = "CC-BY-SA 3.0";
+}

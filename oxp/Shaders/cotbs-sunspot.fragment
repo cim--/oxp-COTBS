@@ -1,0 +1,31 @@
+uniform float       time;
+varying vec3        v_normal;
+varying vec2 vTexCoord;
+
+void main(void) {
+	float x = vTexCoord.s;
+	float y = vTexCoord.t;
+	float r2 = ((0.5 - x)*(0.5 - x)) + ((0.5 - y)*(0.5 - y));
+
+	float xpf = 5.0 + cos(time/6.0)/6.0;
+	float ypf = 17.0 + cos(time/5.73)/1.8;
+
+	r2 += sin(xpf*x)/10.0;
+	r2 -= abs((0.4+sin(ypf*y))/65.0);
+
+	if (r2 > 0.0625) {
+		discard; // outer radius 0.25 units
+	} else {
+		float fade = 0;
+		if (r2 > 0.04) { // inner radius 0.2 units
+			fade = (r2-0.04)/0.0225;
+		}
+		float r = fade + 0.15 + abs(0.1 * sin(time * 0.25));
+		float g = fade + 0.1 + abs(0.06 * sin(time * 0.25));
+		if (r > 1.0) { r = 1.0; }
+		if (g > 1.0) { g = 1.0; }
+
+		gl_FragColor = vec4(r, g, fade, 1.0);
+	}
+
+}

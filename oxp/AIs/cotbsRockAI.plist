@@ -1,0 +1,9 @@
+{
+		"GLOBAL" = {
+				"ENTER" = ("pauseAI: 5");
+				"UPDATE" = ("scanForNearestMerchantman", "pauseAI: 5", "sendScriptMessage: _transmitCurse");
+				"TARGET_FOUND" = ("setTargetToFoundTarget","performAttack");
+				"TARGET_LOST" = ("performIdle");
+		};
+
+}

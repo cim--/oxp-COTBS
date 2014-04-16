@@ -1,0 +1,21 @@
+{
+		"cotbs-news1-title" = "Piracy Warning";
+		"cotbs-news1-message" = "Galcop Level 3 Warning: Teususdi Outland Region:\n\nAll ships, please note that a large and well-equipped pirate fleet is attacking shipping in the Teususdi Outland region. Several trading convoys have been ambushed and destroyed before local police could intervene, with surviving escorts reporting a high degree of coordination by the attackers. Traders are advised to exercise extreme caution, and hire additional escorts.\n\nThe fleet is believed to be coordinated from this ship, the Python Class Cruiser 'Adversarial', under 'Commodore' Bredl. Reports suggest that it is extensively customised, and has multiple heavily-armed escorts. All sightings so far have been in the Enanen system, which is believed to contain the pirate base of operations. Pilots below the rank of 'Deadly' are strongly advised not to engage this vessel in combat.\n\nThis warning will be repeated regularly until the situation is resolved.";
+
+		"cotbs-sya1" = "You ask one of the technicians about the odd behaviour your ship has been having, and they wander over to take a look.\n\"There's definitely something odd going on in your flight software, but I can't tell what it is with the tools here - basic repairs and spare parts are all we're set up for.\nAll of the really critical systems like the engines and reactors have redundant hardware and software controls, so they should be okay, but all your navigation and combat systems have to be linked in to the main flight computer to work at all. Have you been in any tough fights recently? Could be some invisible damage at the molecular level that's messing up sensor readings or signalling.\nI'd recommend you get yourself over to Teususdi and have the crew there take a look at it.\"";
+
+		"cotbs-sya2" = "The technicians have a look at your flight computer for a little while.\n\"Okay, the problem here is that you've got a software virus, and it's not one we've seen before. It's pretty well entrenched across your entire flight system now, and who knows where else.\nFor a thousand credits, we can do a complete restore of your flight system from clean factory backups - pay at the desk when you're buying your fuel. I suspect that's not the only place it is, though, so get yourself over to Cedile or Bixein as soon as you can - ideally before it reinfects your flight systems. They'll be able to do a proper cleanup, though it won't be cheap.\"";
+		
+		"cotbs-sya3" = "After some time examining your ship, the technicians return.\n\"You've got a very sophisticated polymorphic virus on your ship. It infects just about everything - even your doors are infected, though fortunately the airlock processors are isolated. We can restore the flight systems from backup, of course, but it'll be back after a few days, so that's going to get expensive quickly. So, two choices.\n\n1) We completely replace all the electronics on your ship, and all your personal electronics too. That'll cost you [mission_COTBS_cost] credits, but it'll work.\n\n2) Looking through your logs, the virus seems to be receiving updates and instructions from an external source - probably a transmitter in the Enanen system, from the times it happened. If you can bring us that transmitter, it probably has a shut-down mode, and we'll sell it to an anti-virus company which will cover the costs for any residual cleanup. It'll be somewhere out of the way, I guess: given time, your compass might be able to triangulate it, or maybe there's some other way to find it.\"";
+		
+		"cotbs-sya3-choices" = {
+				"01_TRANS" = "I'll look for the transmitter.";
+				"02_CLEANUP" = "It could be anywhere - I'll pay up.";
+		};
+
+		"cotbs-sya3-mission" = "Find the transmitter in Enanen and bring it back to Cedile or Bixein";
+
+		"cotbs-sya4" = "You hand the transmitter over to the technicians. Fortunately, it does have a shutdown command easily available, presumably for when the pirates accidentally infected one of their own ships, and your flight systems are soon clean.\n\nA local anti-virus company pays a substantial sum for the transmitter, which pays off your bills at the shipyard, with 2500 credits left over for further repairs.";
+
+
+}
